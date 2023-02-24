@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    background-image: url("../images/hero.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+header{
+    padding: 25rem;
+    background-image: url("../images/hero.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+h1{
+    
+    font-size: 12.8rem;
+    font-weight: 700;
+    color: #FFF;
+    font-family: 'Corinthia';
+    }
+
+    span {
+        font-size: 6.4rem;
+        color:#FFF;
+        font-size: 'Montserrat';
+    }
