@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-primary: primary: #FFF;
+    --font-heading: 'Corinthia';
+    --font-default: 'Montserrat';
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: var(--font-default);
+    color: #FFF
+}
+body{
+    background-image: url("../images/hero.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position-y: -500px;
+}
+.zooma{
+    animation: zoom 5s;
+}
+header::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform:scale(1.5);
+
+}
+
+
+@keyframes zoom {
+    0%{
+        transform:scale(1.5);
+    }
+    100%{
+        transform: sclae(1.2);
+    }
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25rem;
+    height: 100vh;
+    background-size: cover;
+    gap: 20px
+
+}
+
+
+
+
+
+h1{
+    text-align: center;
+    font-size: 12.8rem;
+    font-weight: 700;
+    color: #FFF;
+    font-family: var(--font-heading);
+    }
+
+
+.p_cima {
+    text-align: center;
+    font-size: 3.4rem;
+    color:#FFF;
+   
+}
+
+.p_baixo{
+    text-align: center;
+    font-size: 1.8rem;
+    color:#FFF;
+    
+}
+
+.button{
+    background: linear-gradient(90deg, #424258, #BEC0C7);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 1.8rem ;
+    font-family:var(--font-default);
+    text-decoration: none;
+
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px #45403F;
+   
+}
+
+img.avatar{
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+
+.section-presentation{
+    display: flex;
+    color: #BEC0C7;
+    font-size: 1.8rem;
+    gap: 2rem;
+}
+
+.section-presentation div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: flex-start;
+    font-size: 2.0rem;
+}
